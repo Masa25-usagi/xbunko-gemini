@@ -1,0 +1,259 @@
+{
+  "title": "注文の多い料理店",
+  "author": "宮沢賢治",
+  "url": "https://www.aozora.gr.jp/cards/000081/files/43754_17659.html",
+  "characters": [
+    {
+      "id": "narrator",
+      "name": "宮沢賢治（語り手）",
+      "handle": "kenji_narrator",
+      "avatar": "🌲",
+      "avatarBg": "#166534",
+      "bio": "イーハトーブの山奥で繰り広げられる不思議な世界を報告する公式アカウント。",
+      "verified": true
+    },
+    {
+      "id": "gentleman_shiro",
+      "name": "若い紳士・白田",
+      "handle": "hunter_shiro",
+      "avatar": "🎩",
+      "avatarBg": "#3B82F6",
+      "bio": "ぴかぴかの鉄砲をかつぎ、白熊のような犬を連れて山奥へ狩りに来た都会の紳士。",
+      "verified": false
+    },
+    {
+      "id": "gentleman_kuro",
+      "name": "若い紳士・黒川",
+      "handle": "hunter_kuro",
+      "avatar": "🧐",
+      "avatarBg": "#8B5CF6",
+      "bio": "同じくイギリスの兵隊のような恰好をして山に来たが、獲物が一匹も獲れず腹ペコな紳士。",
+      "verified": false
+    },
+    {
+      "id": "wildcat_house",
+      "name": "西洋料理店 山猫軒",
+      "handle": "rest_wildcat",
+      "avatar": "🐱",
+      "avatarBg": "#EF4444",
+      "bio": "「どなたもどうかお入りください。決してご遠慮はありません」山奥の洋食レストラン。",
+      "verified": true
+    },
+    {
+      "id": "dogs",
+      "name": "白熊のような犬たち",
+      "handle": "hunting_dogs",
+      "avatar": "🐕",
+      "avatarBg": "#F59E0B",
+      "bio": "紳士たちが連れてきた猟犬。山の恐ろしさに泡を吹いて倒れたが、最後に大活躍する。",
+      "verified": false
+    }
+  ],
+  "trends": [
+    { "tag": "#注文の多い料理店", "postsCount": "62.4K", "category": "グルメ・レジャー" },
+    { "tag": "#山猫軒", "postsCount": "38.9K", "category": "レストラン速報" },
+    { "tag": "#壺の塩をよくもみ込んで", "postsCount": "21.0K", "category": "トレンド" },
+    { "tag": "#鉄砲と弾丸を置いて", "postsCount": "15.3K", "category": "防犯" },
+    { "tag": "#イーハトーブ", "postsCount": "84.2K", "category": "宮沢賢治" }
+  ],
+  "posts": [
+    {
+      "id": "r1",
+      "speakerId": "narrator",
+      "text": "二人の若い紳士が、すっかりイギリスの兵隊のかたちをして、ぴかぴかする鉄砲をかついで、白熊のような犬を二疋つれて、山奥を歩いておりました。",
+      "type": "narration",
+      "likes": 5400,
+      "reposts": 820,
+      "views": 48000,
+      "buzzRate": 40,
+      "timestamp": "5分前"
+    },
+    {
+      "id": "r2",
+      "speakerId": "gentleman_shiro",
+      "text": "ぜんたい、ここらの山は怪しからんね。鳥も獣も一疋も居やしない。なんでも構わないから、早くタンタタタンとやってみたいもんだな。",
+      "type": "dialogue",
+      "likes": 1200,
+      "reposts": 190,
+      "views": 12000,
+      "buzzRate": 20,
+      "timestamp": "4分前"
+    },
+    {
+      "id": "r3",
+      "speakerId": "gentleman_kuro",
+      "text": "鹿の黄いろな横っ腹なんぞに、二三発お見舞いもうしたら、痛快だろうねえ。ああ、寒さで風がどうどう吹き込んできた。腹が空いてたまらない。",
+      "type": "dialogue",
+      "likes": 1400,
+      "reposts": 210,
+      "views": 14000,
+      "buzzRate": 22,
+      "timestamp": "4分前"
+    },
+    {
+      "id": "r4",
+      "speakerId": "narrator",
+      "text": "そのとき二疋の犬は、あんまり山が物凄いために、がたがた顫えて、泡を吐いて死んでしまいました。二人の紳士は途方に暮れました。",
+      "type": "narration",
+      "likes": 18200,
+      "reposts": 7400,
+      "views": 210000,
+      "buzzRate": 88,
+      "timestamp": "3分前"
+    },
+    {
+      "id": "r5",
+      "speakerId": "gentleman_shiro",
+      "text": "おい見ろ！ 藪の中に立派な西洋造りの館があるぞ！ 看板が出ている……「西洋料理店 WILDCAT HOUSE 山猫軒」！？ こんな山奥に！？",
+      "type": "dialogue",
+      "likes": 8900,
+      "reposts": 2100,
+      "views": 76000,
+      "buzzRate": 72,
+      "timestamp": "3分前"
+    },
+    {
+      "id": "r6",
+      "speakerId": "wildcat_house",
+      "text": "【看板の言葉】「どなたもどうかお入りください。決してご遠慮はありません」",
+      "type": "dialogue",
+      "likes": 24000,
+      "reposts": 12000,
+      "views": 390000,
+      "buzzRate": 95,
+      "timestamp": "2分前"
+    },
+    {
+      "id": "r7",
+      "speakerId": "gentleman_kuro",
+      "text": "こいつはどうだ、渡りに船だ！ 「当軒は注文の多い料理店ですからどうかそこはご承知ください」と書いてある。流行っている店なんだな！ 入ろう！",
+      "type": "dialogue",
+      "likes": 9500,
+      "reposts": 3100,
+      "views": 88000,
+      "buzzRate": 76,
+      "timestamp": "2分前"
+    },
+    {
+      "id": "r8",
+      "speakerId": "wildcat_house",
+      "text": "【第二の扉】「鉄砲と弾丸をここへ置いてください。金属のものは料理場へ持ち込んではなりません」",
+      "type": "dialogue",
+      "likes": 18900,
+      "reposts": 6800,
+      "views": 190000,
+      "buzzRate": 84,
+      "timestamp": "2分前"
+    },
+    {
+      "id": "r9",
+      "speakerId": "gentleman_shiro",
+      "text": "なるほど、料理をいただくのに銃を抱えていては失礼だ。置いていこう。",
+      "type": "dialogue",
+      "likes": 3200,
+      "reposts": 410,
+      "views": 28000,
+      "buzzRate": 35,
+      "timestamp": "1分前"
+    },
+    {
+      "id": "r10",
+      "speakerId": "wildcat_house",
+      "text": "【第三の扉】「壺の中のクリームを、顔や手足にすっかり塗ってください」",
+      "type": "dialogue",
+      "likes": 38000,
+      "reposts": 19500,
+      "views": 520000,
+      "buzzRate": 98,
+      "timestamp": "1分前"
+    },
+    {
+      "id": "r11",
+      "speakerId": "gentleman_kuro",
+      "text": "外がひどく寒かったから、部屋の暖房で皮膚がひび割れないようにという気の利いた心遣いだな。牛乳クリームのいい匂いだ、耳の裏まで塗っておこう！",
+      "type": "dialogue",
+      "likes": 14200,
+      "reposts": 4900,
+      "views": 150000,
+      "buzzRate": 79,
+      "timestamp": "1分前"
+    },
+    {
+      "id": "r12",
+      "speakerId": "wildcat_house",
+      "text": "【最後の扉】「注文は多くて大変でしたでしょう。さあ、壺の中の塩を、体によくもみ込んで、お早く中へお入りください」",
+      "type": "dialogue",
+      "likes": 78000,
+      "reposts": 46000,
+      "views": 1400000,
+      "buzzRate": 100,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "r13",
+      "speakerId": "gentleman_shiro",
+      "text": "……おい。塩をもみ込めって……？",
+      "type": "thought",
+      "likes": 62000,
+      "reposts": 35000,
+      "views": 1100000,
+      "buzzRate": 100,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "r14",
+      "speakerId": "gentleman_kuro",
+      "text": "……！ 「西洋料理店」というのは……客に料理を食わせる店じゃなくて……やって来た客を……西洋料理にして……食っちまう店なんだ……！",
+      "type": "dialogue",
+      "likes": 98000,
+      "reposts": 62000,
+      "views": 2200000,
+      "buzzRate": 100,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "r15",
+      "speakerId": "wildcat_house",
+      "text": "鍵穴から青い目玉二つがぎょろぎょろ覗いている。「おい！ 早く入れ！ 親分がもうナプキンを首にまいて、ナイフとフォークを持って待ってるぞ！」",
+      "type": "dialogue",
+      "likes": 84000,
+      "reposts": 51000,
+      "views": 1800000,
+      "buzzRate": 100,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "r16",
+      "speakerId": "gentleman_shiro",
+      "text": "うわあああああっ！ 助けてくれええええ！！ 扉が開かない！ 紙屑のように顔がくしゃくしゃになって泣き叫ぶ二人……！",
+      "type": "dialogue",
+      "likes": 45000,
+      "reposts": 21000,
+      "views": 820000,
+      "buzzRate": 97,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "r17",
+      "speakerId": "dogs",
+      "text": "ワンワン！ ドーッ！ ガタガタ！ バァーン！（生き返った二疋の犬が扉を突き破って突入！ 化け猫たちを蹴散らす！）",
+      "type": "dialogue",
+      "likes": 91000,
+      "reposts": 57000,
+      "views": 1950000,
+      "buzzRate": 100,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "r18",
+      "speakerId": "narrator",
+      "text": "館は煙のように消えうせ、二人は草の中に立っていました。二人は無事に東京へ帰りましたが、あの紙屑のようになった顔だけは、東京へ帰っても、お湯に入っても、もう二度と元には直りませんでした。",
+      "type": "narration",
+      "likes": 115000,
+      "reposts": 72000,
+      "views": 2800000,
+      "buzzRate": 100,
+      "timestamp": "たった今"
+    }
+  ]
+}

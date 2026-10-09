@@ -1,0 +1,173 @@
+{
+  "title": "坊っちゃん",
+  "author": "夏目漱石",
+  "url": "https://www.aozora.gr.jp/cards/000148/files/752_14964.html",
+  "characters": [
+    {
+      "id": "botchan",
+      "name": "坊っちゃん（語り手）",
+      "handle": "botchan_official",
+      "avatar": "👦",
+      "avatarBg": "#2563EB",
+      "bio": "親譲りの無鉄砲で小供の時から損ばかりしている。東京生まれの数学教師。",
+      "verified": true
+    },
+    {
+      "id": "kiyo",
+      "name": "清（ばあや）",
+      "handle": "kiyo_servant",
+      "avatar": "👵",
+      "avatarBg": "#EC4899",
+      "bio": "坊っちゃんを誰よりも愛し、ひたすら贔屓にしてくれる長年仕えた下女の清。",
+      "verified": true
+    },
+    {
+      "id": "yamaarashi",
+      "name": "山嵐（堀田）",
+      "handle": "yamaarashi_hotta",
+      "avatar": "🦍",
+      "avatarBg": "#059669",
+      "bio": "数学主任。まるで熊か山嵐のようにがっしりした豪傑。正義感が強い。",
+      "verified": false
+    },
+    {
+      "id": "red_shirt",
+      "name": "赤シャツ（教頭）",
+      "handle": "red_shirt_head",
+      "avatar": "👔",
+      "avatarBg": "#DC2626",
+      "bio": "年中赤シャツを着ている文学士の教頭。気取った喋り方で陰険に策謀を巡らせる。",
+      "verified": false
+    }
+  ],
+  "trends": [
+    { "tag": "#親譲りの無鉄砲", "postsCount": "51.0K", "category": "トレンド" },
+    { "tag": "#赤シャツを殴る", "postsCount": "34.2K", "category": "松山ニュース" },
+    { "tag": "#清の手紙", "postsCount": "28.5K", "category": "エモい" },
+    { "tag": "#温泉と団子", "postsCount": "19.3K", "category": "四国グルメ" },
+    { "tag": "#坊っちゃん", "postsCount": "88.0K", "category": "日本文学" }
+  ],
+  "posts": [
+    {
+      "id": "b1",
+      "speakerId": "botchan",
+      "text": "親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。",
+      "type": "narration",
+      "likes": 28400,
+      "reposts": 14200,
+      "views": 420000,
+      "buzzRate": 99,
+      "timestamp": "10分前"
+    },
+    {
+      "id": "b2",
+      "speakerId": "kiyo",
+      "text": "坊っちゃんは気性がまっすぐで、とても気品がおありだから、将来はきっと立派なお方におなりなさいますよ。この清が保証いたします。",
+      "type": "dialogue",
+      "likes": 32000,
+      "reposts": 16500,
+      "views": 510000,
+      "buzzRate": 100,
+      "timestamp": "8分前"
+    },
+    {
+      "id": "b3",
+      "speakerId": "botchan",
+      "text": "清は贔屓目で見てるだけだ。褒められたって何にも嬉しくない。おれは東京の物理学校を卒業して、四国の中学校へ数学の教師として赴任することになった。こんな田舎、来たくもなかったが仕方がない。",
+      "type": "dialogue",
+      "likes": 8400,
+      "reposts": 1200,
+      "views": 65000,
+      "buzzRate": 65,
+      "timestamp": "6分前"
+    },
+    {
+      "id": "b4",
+      "speakerId": "red_shirt",
+      "text": "やあ、新任の先生ですか。精神的娯楽の少ない田舎ですから、大いに精神修養に励んでいただきたいものですな。フフ……",
+      "type": "dialogue",
+      "likes": 4200,
+      "reposts": 890,
+      "views": 48000,
+      "buzzRate": 52,
+      "timestamp": "5分前"
+    },
+    {
+      "id": "b5",
+      "speakerId": "botchan",
+      "text": "なんだあの気取った教頭は。年中赤い縮緬のシャツを着やがって、声もしなだれて気味が悪い。おれはあいつを『赤シャツ』と呼ぶことにした。",
+      "type": "thought",
+      "likes": 19400,
+      "reposts": 6200,
+      "views": 210000,
+      "buzzRate": 89,
+      "timestamp": "4分前"
+    },
+    {
+      "id": "b6",
+      "speakerId": "yamaarashi",
+      "text": "新任！ 下宿が決まるまでおれの宿へ来い！ 団子屋の遊郭だの、生徒の不祥事だの、この学校の連中は表裏があって気に食わん！ お前は筋の通った男だろうな！",
+      "type": "dialogue",
+      "likes": 12400,
+      "reposts": 3400,
+      "views": 98000,
+      "buzzRate": 78,
+      "timestamp": "3分前"
+    },
+    {
+      "id": "b7",
+      "speakerId": "botchan",
+      "text": "温泉町で団子を二皿食ったら、翌朝黒板に『団子二皿七銭』と書かれやがった。生徒のやつら、宿直の蚊帳の中にバッタを五十匹も放り込みやがって……！ どいつだ！ 出てこい！ 一人ずつ張り倒してやる！",
+      "type": "dialogue",
+      "likes": 45000,
+      "reposts": 23000,
+      "views": 890000,
+      "buzzRate": 99,
+      "timestamp": "2分前"
+    },
+    {
+      "id": "b8",
+      "speakerId": "red_shirt",
+      "text": "まあまあ、教育的見地から言えば、穏便に済ませるのが得策です。山嵐先生も坊っちゃん先生も、少し感情が激しすぎるのでは？",
+      "type": "dialogue",
+      "likes": 6100,
+      "reposts": 1400,
+      "views": 59000,
+      "buzzRate": 60,
+      "timestamp": "1分前"
+    },
+    {
+      "id": "b9",
+      "speakerId": "yamaarashi",
+      "text": "坊っちゃん、赤シャツと野だ（美術教師）が芸者遊びの帰りに待ち伏せして、天誅を加えてやるぞ！ 貴様も来い！",
+      "type": "dialogue",
+      "likes": 38000,
+      "reposts": 18500,
+      "views": 620000,
+      "buzzRate": 97,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "b10",
+      "speakerId": "botchan",
+      "text": "天誅だ！ 卑怯者！ 陰謀ばかり企みおって！ （赤シャツの顔面へ力いっぱい殴り込み、生卵をぶつける）",
+      "type": "dialogue",
+      "likes": 74000,
+      "reposts": 48000,
+      "views": 1800000,
+      "buzzRate": 100,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "b11",
+      "speakerId": "botchan",
+      "text": "辞表を叩きつけて東京へ帰ってきた。清を連れて下宿屋を借りた。清は死ぬ前、坊っちゃんのお寺に埋めてくださいと言った。だから清の墓は小日向の養源寺にある。",
+      "type": "narration",
+      "likes": 98000,
+      "reposts": 56000,
+      "views": 2500000,
+      "buzzRate": 100,
+      "timestamp": "たった今"
+    }
+  ]
+}

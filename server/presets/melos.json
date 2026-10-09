@@ -1,0 +1,312 @@
+{
+  "title": "走れメロス",
+  "author": "太宰治",
+  "url": "https://www.aozora.gr.jp/cards/000035/files/1567_14913.html",
+  "characters": [
+    {
+      "id": "narrator",
+      "name": "太宰治（語り手）",
+      "handle": "dazai_narrator",
+      "avatar": "📖",
+      "avatarBg": "#374151",
+      "bio": "客観的に物語の情景や心理描写を実況する公式アカウント。",
+      "verified": true
+    },
+    {
+      "id": "merosu",
+      "name": "メロス",
+      "handle": "merosu_run",
+      "avatar": "🏃‍♂️",
+      "avatarBg": "#2563EB",
+      "bio": "村の素朴な牧人。羊と笛が好き。不正に対して激怒しやすい性格。走るのが得意。",
+      "verified": true
+    },
+    {
+      "id": "dionisu",
+      "name": "ディオニス王",
+      "handle": "tyrant_dionysus",
+      "avatar": "👑",
+      "avatarBg": "#DC2626",
+      "bio": "シラクスの王。人間不信を極めており、身内や臣下を容赦なく処刑中。孤独が趣味。",
+      "verified": true
+    },
+    {
+      "id": "selinuntius",
+      "name": "セリヌンティウス",
+      "handle": "selinuntius_craft",
+      "avatar": "🔨",
+      "avatarBg": "#D97706",
+      "bio": "シラクスの石工。メロスの無二の親友。人質を頼まれてもメロスを100%信じる男。",
+      "verified": false
+    },
+    {
+      "id": "philostratos",
+      "name": "フィロストラトス",
+      "handle": "philo_apprentice",
+      "avatar": "🏃",
+      "avatarBg": "#059669",
+      "bio": "セリヌンティウスの弟子。メロスに『もう走るのをやめてくれ』と懇願する役目。",
+      "verified": false
+    },
+    {
+      "id": "citizen",
+      "name": "シラクスの老爺",
+      "handle": "syracuse_elder",
+      "avatar": "👴",
+      "avatarBg": "#4B5563",
+      "bio": "シラクスの街でメロスに街の異変と王の暴政をこっそり教えた老人。",
+      "verified": false
+    }
+  ],
+  "trends": [
+    { "tag": "#メロス激怒", "postsCount": "48.2K", "category": "ギリシャ・トレンド" },
+    { "tag": "#邪智暴虐の王", "postsCount": "32.1K", "category": "シラクス速報" },
+    { "tag": "#友を人質に", "postsCount": "19.5K", "category": "社会" },
+    { "tag": "#濁流と山賊", "postsCount": "12.8K", "category": "天気・災害" },
+    { "tag": "#走れメロス", "postsCount": "95.4K", "category": "日本文学" }
+  ],
+  "posts": [
+    {
+      "id": "m1",
+      "speakerId": "narrator",
+      "text": "メロスは激怒した。必ず、かの邪智暴虐の王を除かなければならぬと決意した。",
+      "type": "narration",
+      "likes": 15420,
+      "reposts": 8940,
+      "views": 320000,
+      "buzzRate": 99,
+      "timestamp": "3分前"
+    },
+    {
+      "id": "m2",
+      "speakerId": "merosu",
+      "text": "シラクスの市に入ったが、なんだこの静まり返りようは……？ 夜とはいえ、いくらなんでも気味が悪すぎる。誰か事情を知っているやつはいないか！",
+      "type": "dialogue",
+      "likes": 2340,
+      "reposts": 412,
+      "views": 18200,
+      "buzzRate": 45,
+      "timestamp": "3分前"
+    },
+    {
+      "id": "m3",
+      "speakerId": "citizen",
+      "text": "旅のお方、大きな声を出してはならん……王様は人を信じられず、妹様もお世継ぎも皇后様も、みんな処刑してしまわれたのだ……今日も街の者が六人殺されたのじゃ……",
+      "type": "dialogue",
+      "likes": 6420,
+      "reposts": 3180,
+      "views": 84500,
+      "buzzRate": 82,
+      "timestamp": "2分前"
+    },
+    {
+      "id": "m4",
+      "speakerId": "merosu",
+      "text": "呆れた王だ。生かして置くことはできぬ！",
+      "type": "dialogue",
+      "likes": 18900,
+      "reposts": 9200,
+      "views": 410000,
+      "buzzRate": 98,
+      "timestamp": "2分前"
+    },
+    {
+      "id": "narrator",
+      "speakerId": "narrator",
+      "text": "メロスは、ふところから短剣を懐中にしのばせ、城中深くはいって行ったが、あえなく巡邏の警吏に捕縛された。調べられて、懐中からは短剣が出て来たので、騒ぎが大きくなった。",
+      "type": "narration",
+      "likes": 1200,
+      "reposts": 180,
+      "views": 15000,
+      "buzzRate": 25,
+      "timestamp": "2分前"
+    },
+    {
+      "id": "m5",
+      "speakerId": "dionisu",
+      "text": "その短剣で何をする気だったのか。言え。",
+      "type": "dialogue",
+      "likes": 5600,
+      "reposts": 1200,
+      "views": 62000,
+      "buzzRate": 68,
+      "timestamp": "1分前"
+    },
+    {
+      "id": "m6",
+      "speakerId": "merosu",
+      "text": "市を暴君の手から救うのだ！ お前は人の心を疑ってばかりいる。人を信じることこそ最大の美徳ではないか！",
+      "type": "dialogue",
+      "likes": 28400,
+      "reposts": 14200,
+      "views": 650000,
+      "buzzRate": 99,
+      "timestamp": "1分前"
+    },
+    {
+      "id": "m7",
+      "speakerId": "dionisu",
+      "text": "ふっ……疑うのが正当の心構えだ。お前ら下民は自分が可愛いだけよ。処刑はお前の望み通り磔にしてやる。",
+      "type": "dialogue",
+      "likes": 8400,
+      "reposts": 2800,
+      "views": 98000,
+      "buzzRate": 74,
+      "timestamp": "1分前"
+    },
+    {
+      "id": "m8",
+      "speakerId": "merosu",
+      "text": "命乞いはせぬ！ただ、村に残した妹の結婚式を挙げてやりたい。頼む、三日間の日限をくれ！ 身代わりにシラクスの石工セリヌンティウスを置いていく！もし三日目の日没までに帰らなければ彼を殺せ！",
+      "type": "dialogue",
+      "likes": 34100,
+      "reposts": 18900,
+      "views": 890000,
+      "buzzRate": 100,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "m9",
+      "speakerId": "dionisu",
+      "text": "くくく……馬鹿な男だ。帰ってくるはずがない。だが面白い、その友を召し出せ。三日目の暮れまでに戻らねば、そいつを磔にしてやろう。",
+      "type": "dialogue",
+      "likes": 9800,
+      "reposts": 3400,
+      "views": 120000,
+      "buzzRate": 79,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "m10",
+      "speakerId": "selinuntius",
+      "text": "……メロス、何も言わなくていい。お前の頼みなら、無言で縛り首の縄にかかってやる。行ってこい！",
+      "type": "dialogue",
+      "likes": 48200,
+      "reposts": 26500,
+      "views": 1250000,
+      "buzzRate": 100,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "m11",
+      "speakerId": "narrator",
+      "text": "メロスは直ちに出発した。風のように走り、雨のように駆け、翌る日の昼には村に着き、妹の結婚式を強引に執り行わせた。そして三日目の払暁、メロスは再び走り始めた。",
+      "type": "narration",
+      "likes": 4200,
+      "reposts": 890,
+      "views": 43000,
+      "buzzRate": 55,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "m12",
+      "speakerId": "merosu",
+      "text": "川が氾濫して橋が流されている……！ 泳ぐしかない！ 友を救うためだ、神よ我を守りたまえ！",
+      "type": "dialogue",
+      "likes": 22100,
+      "reposts": 8300,
+      "views": 390000,
+      "buzzRate": 92,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "m13",
+      "speakerId": "merosu",
+      "text": "山賊だ……！ 王の刺客か！？ 棒切れ一つで三人を打ち倒したが、もう体が動かん……太陽が沈む……もうだめだ……セリヌンティウス、許してくれ……メロスは力尽きた……",
+      "type": "thought",
+      "likes": 31000,
+      "reposts": 12500,
+      "views": 580000,
+      "buzzRate": 96,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "m14",
+      "speakerId": "narrator",
+      "text": "路傍の清水を一口飲んだとき、メロスの魂は蘇った。「走るのだ、信じられているから走るのだ！」メロスは裸体で疾風の如く突進した。",
+      "type": "narration",
+      "likes": 18200,
+      "reposts": 7400,
+      "views": 290000,
+      "buzzRate": 89,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "m15",
+      "speakerId": "philostratos",
+      "text": "旦那！ メロス様！ もう間に合いません！ 今まさに処刑台の幕が上がろうとしています！ もうお止めなさい！",
+      "type": "dialogue",
+      "likes": 14200,
+      "reposts": 5100,
+      "views": 210000,
+      "buzzRate": 85,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "m16",
+      "speakerId": "merosu",
+      "text": "間に合う、間に合わぬは問題ではない！ 私は信頼に報いなければならぬ！ まだ日は沈んでいない！",
+      "type": "dialogue",
+      "likes": 56000,
+      "reposts": 31200,
+      "views": 1800000,
+      "buzzRate": 100,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "m17",
+      "speakerId": "merosu",
+      "text": "待て！ その人を殺すな！ メロスが帰ってきた！ 私が代わりに磔になるのだ！ セリヌンティウス！",
+      "type": "dialogue",
+      "likes": 89400,
+      "reposts": 54100,
+      "views": 2900000,
+      "buzzRate": 100,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "m18",
+      "speakerId": "selinuntius",
+      "text": "メロス……！ 来てくれたのか！ メロス、私を殴れ。一度だけ、お前を疑った。だから私を力いっぱい殴ってくれ！",
+      "type": "dialogue",
+      "likes": 73200,
+      "reposts": 41000,
+      "views": 2400000,
+      "buzzRate": 100,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "m19",
+      "speakerId": "merosu",
+      "text": "セリヌンティウス、お前も私を殴れ！ 私も途中で一度だけ、悪い夢を見て諦めかけた！ 殴れ！",
+      "type": "dialogue",
+      "likes": 82100,
+      "reposts": 49800,
+      "views": 2700000,
+      "buzzRate": 100,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "m20",
+      "speakerId": "dionisu",
+      "text": "お前らの勝ちだ。真実は空想ではなかった。どうか、私をもお前らの仲間にいれてくれまいか……！",
+      "type": "dialogue",
+      "likes": 104000,
+      "reposts": 68000,
+      "views": 3500000,
+      "buzzRate": 100,
+      "timestamp": "たった今"
+    },
+    {
+      "id": "m21",
+      "speakerId": "narrator",
+      "text": "群衆から、どっと万歳の歓声が湧き起こった。ひとりの少女が、緋の外套をメロスに捧げた。メロスは、まごついた。良き友は、そっと教えてやった。「メロス、君は、まっぱだかじゃないか」",
+      "type": "narration",
+      "likes": 128000,
+      "reposts": 88000,
+      "views": 4200000,
+      "buzzRate": 100,
+      "timestamp": "たった今"
+    }
+  ]
+}
