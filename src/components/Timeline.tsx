@@ -1,7 +1,7 @@
 import React from 'react';
 import { Post, Character, TimelineFilter } from '../types';
 import { TweetCard } from './TweetCard';
-import { Sparkles, MessageSquare, ChevronDown } from 'lucide-react';
+import { MessageSquare, ChevronDown, PartyPopper } from 'lucide-react';
 
 interface TimelineProps {
   posts: Post[];
@@ -22,7 +22,6 @@ export const Timeline: React.FC<TimelineProps> = ({
   displayedCount,
   onShowNext,
   onShowAll,
-  totalPosts,
 }) => {
   const characterMap = React.useMemo(() => {
     const map = new Map<string, Character>();
@@ -58,36 +57,48 @@ export const Timeline: React.FC<TimelineProps> = ({
   }, [filteredPosts, filter, selectedCharacterId, displayedCount]);
 
   const hasMore = !selectedCharacterId && filter !== 'buzz_order' && displayedCount < filteredPosts.length;
+  const progress = filteredPosts.length > 0
+    ? Math.min(100, (Math.min(displayedCount, filteredPosts.length) / filteredPosts.length) * 100)
+    : 0;
 
   return (
-    <div className="flex-1 min-h-screen border-r border-[#2f3336]">
+    <div className="flex-1 min-h-screen">
       {/* What's happening prompt / Read Next Bar */}
       {hasMore && (
-        <div className="p-3 border-b border-[#2f3336] bg-[#16181c]/40 flex items-center justify-between gap-3 text-sm">
-          <span className="text-[#71767b] text-xs">
-            物語が進行中… ({displayedCount} / {filteredPosts.length} ポスト表示中)
-          </span>
-          <div className="flex items-center gap-2">
-            <button
-              onClick={onShowNext}
-              className="px-3 py-1.5 rounded-full bg-[#202327] hover:bg-[#2c3035] text-xs font-semibold text-white border border-[#2f3336] transition-colors flex items-center gap-1"
-            >
-              <ChevronDown className="w-3.5 h-3.5" />
-              <span>次の発言を読む</span>
-            </button>
-            <button
-              onClick={onShowAll}
-              className="px-3 py-1.5 rounded-full bg-xblue hover:bg-xblue-hover text-xs font-semibold text-white transition-colors"
-            >
-              一括全表示
-            </button>
+        <div className="border-b border-xb-border bg-xb-surface/40">
+          {/* 読書進捗バー */}
+          <div className="h-[3px] bg-xb-elevated/60">
+            <div
+              className="h-full bg-xb-accent transition-all duration-500 ease-out"
+              style={{ width: `${progress}%` }}
+            />
+          </div>
+          <div className="p-3 flex items-center justify-between gap-3 text-sm">
+            <span className="text-xb-muted text-xs tabular-nums">
+              物語が進行中… ({displayedCount} / {filteredPosts.length} ポスト表示中)
+            </span>
+            <div className="flex items-center gap-2 flex-shrink-0">
+              <button
+                onClick={onShowNext}
+                className="px-3 py-1.5 rounded-full bg-xb-elevated hover:bg-xb-hoverstrong text-xs font-semibold text-xb-strong border border-xb-border transition-all active:scale-95 flex items-center gap-1"
+              >
+                <ChevronDown className="w-3.5 h-3.5" />
+                <span>次の発言を読む</span>
+              </button>
+              <button
+                onClick={onShowAll}
+                className="px-3 py-1.5 rounded-full bg-xb-accent hover:bg-xb-accenthover text-xs font-semibold text-white transition-all active:scale-95"
+              >
+                一括全表示
+              </button>
+            </div>
           </div>
         </div>
       )}
 
       {/* Posts List */}
       {visiblePosts.length > 0 ? (
-        <div className="divide-y divide-[#2f3336]">
+        <div className="divide-y divide-xb-border">
           {visiblePosts.map((post, idx) => (
             <TweetCard
               key={post.id}
@@ -99,9 +110,11 @@ export const Timeline: React.FC<TimelineProps> = ({
         </div>
       ) : (
         <div className="py-16 px-4 text-center">
-          <MessageSquare className="w-12 h-12 text-[#71767b] mx-auto mb-3 opacity-60" />
-          <h3 className="text-lg font-bold text-white mb-1">表示するポストがありません</h3>
-          <p className="text-sm text-[#71767b] max-w-sm mx-auto">
+          <div className="w-16 h-16 rounded-full bg-xb-surface border border-xb-border flex items-center justify-center mx-auto mb-4">
+            <MessageSquare className="w-7 h-7 text-xb-muted" />
+          </div>
+          <h3 className="text-lg font-bold text-xb-strong mb-1">表示するポストがありません</h3>
+          <p className="text-sm text-xb-muted max-w-sm mx-auto leading-relaxed">
             フィルター条件に一致するポストが見つかりませんでした。別のフィルターをお試しください。
           </p>
         </div>
@@ -109,8 +122,11 @@ export const Timeline: React.FC<TimelineProps> = ({
 
       {/* Timeline bottom footer */}
       {visiblePosts.length > 0 && !hasMore && (
-        <div className="py-10 text-center text-xs text-[#71767b] border-t border-[#2f3336]/40">
-          <p className="font-semibold text-neutral-400 mb-1">🎉 物語の最後まで到達しました</p>
+        <div className="py-10 text-center text-xs text-xb-muted border-t border-xb-border/40">
+          <p className="inline-flex items-center gap-1.5 font-semibold text-xb-text mb-1">
+            <PartyPopper className="w-4 h-4 text-xb-accent" />
+            物語の最後まで到達しました
+          </p>
           <p>他の作品を読んだり、セリフ限定・バズり順表示もお楽しみください。</p>
         </div>
       )}

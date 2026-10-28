@@ -134,7 +134,7 @@ export const App: React.FC = () => {
   const selectedCharacter = novel?.characters.find((c) => c.id === selectedCharacterId);
 
   return (
-    <div className="min-h-screen bg-black text-[#e7e9ea] flex justify-center selection:bg-xblue selection:text-white">
+    <div className="min-h-screen bg-xb-bg text-xb-text flex justify-center selection:bg-xb-accent selection:text-white">
       <div className="flex w-full max-w-[1265px] justify-between">
         {/* Left Sidebar */}
         <SidebarLeft
@@ -152,11 +152,11 @@ export const App: React.FC = () => {
         />
 
         {/* Main Content / Timeline */}
-        <main className="flex-1 max-w-[600px] min-w-0 border-r border-[#2f3336]">
+        <main className="flex-1 max-w-[600px] min-w-0 border-r border-xb-border">
           {loading || !novel ? (
             <div className="flex flex-col items-center justify-center min-h-[60vh] gap-3">
-              <Loader2 className="w-8 h-8 animate-spin text-xblue" />
-              <p className="text-sm text-[#71767b]">青空文庫を読み込み中…</p>
+              <Loader2 className="w-8 h-8 animate-spin text-xb-accent" />
+              <p className="text-sm text-xb-muted">青空文庫を読み込み中…</p>
             </div>
           ) : (
             <>
