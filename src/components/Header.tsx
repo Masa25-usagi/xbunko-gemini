@@ -35,7 +35,7 @@ export const Header: React.FC<HeaderProps> = ({
             </span>
           </div>
           {selectedCharacterName ? (
-            <div className="flex items-center gap-1.5 mt-0.5 text-xs text-xb-accent">
+            <div className="flex items-center gap-1.5 mt-0.5 text-xs text-xb-accenttext">
               <span>絞り込み: {selectedCharacterName} のみ</span>
               <button
                 onClick={onClearCharacter}

@@ -138,7 +138,7 @@ export const SidebarRight: React.FC<SidebarRightProps> = ({
             href={currentNovel.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 hover:underline text-xb-accent rounded-sm"
+            className="inline-flex items-center gap-1 hover:underline text-xb-accenttext rounded-sm"
           >
             <BookOpen className="w-3.5 h-3.5" />
             <span>青空文庫の原作ページを見る</span>

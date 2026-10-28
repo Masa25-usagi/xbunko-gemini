@@ -22,6 +22,8 @@
     --xb-muted: 113 118 123;
     --xb-accent: 29 155 240;
     --xb-accent-hover: 26 140 216;
+    /* リンク・小さなアクセント文字用 (ダーク背景ではアクセント色のまま) */
+    --xb-accent-text: 29 155 240;
     --xb-contrast: 255 255 255;
     --xb-contrast-text: 0 0 0;
     --xb-overlay: 0 0 0;
@@ -56,6 +58,8 @@
       --xb-muted: 83 100 113;
       --xb-accent: 29 155 240;
       --xb-accent-hover: 26 140 216;
+      /* リンク・小さなアクセント文字用: 明背景でコントラスト比 4.5:1 以上を確保 */
+      --xb-accent-text: 3 105 161;
       --xb-contrast: 15 20 25;
       --xb-contrast-text: 255 255 255;
       --xb-overlay: 15 20 25;

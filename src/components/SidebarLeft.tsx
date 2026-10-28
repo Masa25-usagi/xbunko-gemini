@@ -135,7 +135,7 @@ export const SidebarLeft: React.FC<SidebarLeftProps> = ({
             <span className="text-xs font-semibold text-xb-muted uppercase tracking-wider">
               ライブ再生
             </span>
-            <span className="text-xs font-medium text-xb-accent tabular-nums">
+            <span className="text-xs font-medium text-xb-accenttext tabular-nums">
               {displayedPosts} / {totalPosts} 件
             </span>
           </div>
@@ -177,12 +177,28 @@ export const SidebarLeft: React.FC<SidebarLeftProps> = ({
             {selectedCharacterId && (
               <button
                 onClick={() => onSelectCharacter(null)}
-                className="text-[11px] text-xb-accent hover:underline lowercase font-normal"
+                className="text-[11px] text-xb-accenttext hover:underline lowercase font-normal"
               >
                 解除
               </button>
             )}
           </div>
+          {/* 狭い画面用: 人物名を表示できる選択UI */}
+          <select
+            aria-label="登場人物で絞り込み"
+            value={selectedCharacterId ?? ''}
+            onChange={(e) =>
+              onSelectCharacter(e.target.value === '' ? null : e.target.value)
+            }
+            className="xl:hidden w-full mt-1 py-1.5 px-1 rounded-lg border border-xb-border bg-xb-surface text-xb-text text-xs truncate"
+          >
+            <option value="">全員</option>
+            {characters.map((char) => (
+              <option key={char.id} value={char.id}>
+                {char.avatar} {char.name}
+              </option>
+            ))}
+          </select>
           <div className="flex flex-col items-center xl:items-stretch gap-0.5 mt-1 max-h-48 overflow-y-auto xl:pr-1">
             {characters.map((char) => {
               const isSelected = selectedCharacterId === char.id;
@@ -191,6 +207,7 @@ export const SidebarLeft: React.FC<SidebarLeftProps> = ({
                   key={char.id}
                   onClick={() => onSelectCharacter(isSelected ? null : char.id)}
                   title={`${char.name} で絞り込み`}
+                  aria-label={`${char.name} で絞り込み`}
                   className={`flex items-center justify-center xl:justify-start gap-2.5 px-2 xl:px-3 py-2 rounded-xl text-left transition-colors text-sm w-full ${
                     isSelected
                       ? 'bg-xb-accent/20 text-xb-strong border border-xb-accent/40 font-medium'

@@ -33,6 +33,7 @@ export default {
           muted: 'rgb(var(--xb-muted) / <alpha-value>)',
           accent: 'rgb(var(--xb-accent) / <alpha-value>)',
           accenthover: 'rgb(var(--xb-accent-hover) / <alpha-value>)',
+          accenttext: 'rgb(var(--xb-accent-text) / <alpha-value>)',
           contrast: 'rgb(var(--xb-contrast) / <alpha-value>)',
           contrasttext: 'rgb(var(--xb-contrast-text) / <alpha-value>)',
           overlay: 'rgb(var(--xb-overlay) / <alpha-value>)',

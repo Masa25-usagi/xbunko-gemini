@@ -76,7 +76,7 @@ export const ApiKeyModal: React.FC<ApiKeyModalProps> = ({ isOpen, onClose }) => 
             href="https://aistudio.google.com/app/apikey"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-xb-accent hover:underline mt-1 font-medium rounded-sm"
+            className="inline-flex items-center gap-1 text-xb-accenttext hover:underline mt-1 font-medium rounded-sm"
           >
             <span>Google AI Studio で無料のAPIキーを取得</span>
             <ExternalLink className="w-3 h-3" />
