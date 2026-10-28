@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { analyzeNovelWithGemini, getStoredApiKey } from '../services/api';
 import { NovelData } from '../types';
-import { X, Sparkles, Globe, FileText, Loader2, AlertCircle, Bookmark } from 'lucide-react';
+import { X, Sparkles, Globe, FileText, Loader2, AlertCircle } from 'lucide-react';
 
 interface ImportModalProps {
   isOpen: boolean;
@@ -86,39 +86,46 @@ export const ImportModal: React.FC<ImportModalProps> = ({
     }
   };
 
+  const inputClass =
+    'w-full bg-xb-surface border border-xb-border focus:border-xb-accent focus:ring-2 focus:ring-xb-accent/30 focus:outline-none rounded-xl text-xb-text text-sm placeholder-xb-muted transition-shadow disabled:opacity-60';
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 backdrop-blur-sm p-4 animate-in fade-in duration-200">
-      <div 
-        className="bg-[#000000] border border-[#2f3336] rounded-2xl w-full max-w-xl p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto"
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-xb-overlay/75 backdrop-blur-sm p-4 animate-in fade-in duration-200">
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-label="青空文庫をGeminiで解析"
+        className="bg-xb-bg border border-xb-border rounded-2xl w-full max-w-xl p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto animate-in fade-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
         <button
           onClick={onClose}
           disabled={loading}
-          className="absolute top-4 right-4 p-2 rounded-full hover:bg-[#181818] text-[#71767b] hover:text-white transition-colors disabled:opacity-50"
+          aria-label="閉じる"
+          className="absolute top-4 right-4 p-2 rounded-full hover:bg-xb-hoverstrong text-xb-muted hover:text-xb-strong transition-colors disabled:opacity-50"
         >
           <X className="w-5 h-5" />
         </button>
 
         {/* Modal Header */}
         <div className="flex items-center gap-3 mb-5">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white">
+          <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white flex-shrink-0">
             <Sparkles className="w-5 h-5" />
           </div>
           <div>
-            <h3 className="text-xl font-bold text-white">青空文庫をGeminiで解析</h3>
-            <p className="text-xs text-[#71767b]">小説をXタイムライン化する</p>
+            <h3 className="text-xl font-bold text-xb-strong">青空文庫をGeminiで解析</h3>
+            <p className="text-xs text-xb-muted">小説をXタイムライン化する</p>
           </div>
         </div>
 
         {/* Mode Tabs */}
-        <div className="flex rounded-xl bg-[#16181c] p-1 mb-5 border border-[#2f3336]">
+        <div className="flex rounded-xl bg-xb-surface p-1 mb-5 border border-xb-border">
           <button
             onClick={() => { setTab('url'); setError(null); }}
             disabled={loading}
-            className={`flex-1 py-2 rounded-lg text-xs font-bold flex items-center justify-center gap-2 transition-colors ${
-              tab === 'url' ? 'bg-xblue text-white shadow' : 'text-[#71767b] hover:text-white'
+            className={`flex-1 py-2 rounded-lg text-xs font-bold flex items-center justify-center gap-2 transition-all ${
+              tab === 'url' ? 'bg-xb-accent text-white shadow' : 'text-xb-muted hover:text-xb-strong'
             }`}
           >
             <Globe className="w-4 h-4" />
@@ -127,8 +134,8 @@ export const ImportModal: React.FC<ImportModalProps> = ({
           <button
             onClick={() => { setTab('text'); setError(null); }}
             disabled={loading}
-            className={`flex-1 py-2 rounded-lg text-xs font-bold flex items-center justify-center gap-2 transition-colors ${
-              tab === 'text' ? 'bg-xblue text-white shadow' : 'text-[#71767b] hover:text-white'
+            className={`flex-1 py-2 rounded-lg text-xs font-bold flex items-center justify-center gap-2 transition-all ${
+              tab === 'text' ? 'bg-xb-accent text-white shadow' : 'text-xb-muted hover:text-xb-strong'
             }`}
           >
             <FileText className="w-4 h-4" />
@@ -140,7 +147,7 @@ export const ImportModal: React.FC<ImportModalProps> = ({
         {tab === 'url' && (
           <div className="space-y-4 mb-5">
             <div>
-              <label className="block text-xs font-semibold text-[#e7e9ea] mb-1.5">
+              <label className="block text-xs font-semibold text-xb-text mb-1.5">
                 青空文庫 作品HTMLのURL
               </label>
               <input
@@ -149,13 +156,13 @@ export const ImportModal: React.FC<ImportModalProps> = ({
                 onChange={(e) => setUrl(e.target.value)}
                 placeholder="https://www.aozora.gr.jp/cards/000879/files/127_15260.html"
                 disabled={loading}
-                className="w-full px-4 py-2.5 bg-[#16181c] border border-[#2f3336] focus:border-xblue focus:outline-none rounded-xl text-white text-sm placeholder-[#71767b]"
+                className={`${inputClass} px-4 py-2.5`}
               />
             </div>
 
             {/* Quick Suggestions */}
             <div>
-              <span className="text-xs text-[#71767b] font-medium block mb-2">
+              <span className="text-xs text-xb-muted font-medium block mb-2">
                 ワンクリックでおすすめ作品を入力:
               </span>
               <div className="grid grid-cols-2 gap-2">
@@ -169,10 +176,10 @@ export const ImportModal: React.FC<ImportModalProps> = ({
                       setAuthor(sample.author);
                     }}
                     disabled={loading}
-                    className="p-2.5 rounded-xl bg-[#16181c] hover:bg-[#202327] border border-[#2f3336] text-left transition-colors"
+                    className="p-2.5 rounded-xl bg-xb-surface hover:bg-xb-elevated border border-xb-border hover:border-xb-muted/50 text-left transition-all active:scale-[0.98] disabled:opacity-60"
                   >
-                    <p className="text-xs font-bold text-white truncate">{sample.title}</p>
-                    <p className="text-[11px] text-[#71767b] truncate">{sample.author}</p>
+                    <p className="text-xs font-bold text-xb-strong truncate">{sample.title}</p>
+                    <p className="text-[11px] text-xb-muted truncate">{sample.author}</p>
                   </button>
                 ))}
               </div>
@@ -185,7 +192,7 @@ export const ImportModal: React.FC<ImportModalProps> = ({
           <div className="space-y-3 mb-5">
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="block text-xs font-semibold text-[#e7e9ea] mb-1">
+                <label className="block text-xs font-semibold text-xb-text mb-1">
                   作品タイトル
                 </label>
                 <input
@@ -194,11 +201,11 @@ export const ImportModal: React.FC<ImportModalProps> = ({
                   onChange={(e) => setTitle(e.target.value)}
                   placeholder="例: 羅生門"
                   disabled={loading}
-                  className="w-full px-3 py-2 bg-[#16181c] border border-[#2f3336] focus:border-xblue focus:outline-none rounded-xl text-white text-sm"
+                  className={`${inputClass} px-3 py-2`}
                 />
               </div>
               <div>
-                <label className="block text-xs font-semibold text-[#e7e9ea] mb-1">
+                <label className="block text-xs font-semibold text-xb-text mb-1">
                   著者名
                 </label>
                 <input
@@ -207,13 +214,13 @@ export const ImportModal: React.FC<ImportModalProps> = ({
                   onChange={(e) => setAuthor(e.target.value)}
                   placeholder="例: 芥川龍之介"
                   disabled={loading}
-                  className="w-full px-3 py-2 bg-[#16181c] border border-[#2f3336] focus:border-xblue focus:outline-none rounded-xl text-white text-sm"
+                  className={`${inputClass} px-3 py-2`}
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-[#e7e9ea] mb-1">
+              <label className="block text-xs font-semibold text-xb-text mb-1">
                 小説本文（会話や段落を含むテキスト）
               </label>
               <textarea
@@ -222,7 +229,7 @@ export const ImportModal: React.FC<ImportModalProps> = ({
                 placeholder="ある日の暮方の事である。一人の下人が、羅生門の下で雨やみを待っていた……"
                 rows={6}
                 disabled={loading}
-                className="w-full px-3 py-2 bg-[#16181c] border border-[#2f3336] focus:border-xblue focus:outline-none rounded-xl text-white text-sm resize-none"
+                className={`${inputClass} px-3 py-2 resize-none`}
               />
             </div>
           </div>
@@ -230,17 +237,17 @@ export const ImportModal: React.FC<ImportModalProps> = ({
 
         {/* Error message */}
         {error && (
-          <div className="mb-4 p-3 rounded-xl bg-rose-950/40 border border-rose-800/60 text-xs text-rose-300 flex items-start gap-2">
+          <div className="mb-4 p-3 rounded-xl bg-rose-500/10 border border-rose-500/50 text-xs text-rose-500 flex items-start gap-2">
             <AlertCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
             <div className="flex-1">
-              <p>{error}</p>
+              <p className="leading-relaxed">{error}</p>
               {error.includes('API Key') && (
                 <button
                   onClick={() => {
                     onClose();
                     onOpenApiKeyModal();
                   }}
-                  className="mt-1.5 text-xs text-rose-200 underline font-bold hover:text-white"
+                  className="mt-1.5 text-xs underline font-bold hover:opacity-80 transition-opacity rounded-sm"
                 >
                   ここをクリックしてAPIキーを設定する
                 </button>
@@ -250,18 +257,18 @@ export const ImportModal: React.FC<ImportModalProps> = ({
         )}
 
         {/* Actions */}
-        <div className="flex items-center justify-end gap-3 pt-2 border-t border-[#2f3336]">
+        <div className="flex items-center justify-end gap-3 pt-4 border-t border-xb-border">
           <button
             onClick={onClose}
             disabled={loading}
-            className="px-4 py-2 text-sm font-bold text-[#e7e9ea] hover:bg-[#181818] rounded-xl transition-colors disabled:opacity-50"
+            className="px-4 py-2 text-sm font-bold text-xb-text hover:bg-xb-hoverstrong rounded-xl transition-colors disabled:opacity-50"
           >
             キャンセル
           </button>
           <button
             onClick={handleStartAnalysis}
             disabled={loading}
-            className="px-6 py-2.5 text-sm font-bold bg-xblue hover:bg-xblue-hover text-white rounded-xl shadow-lg transition-all flex items-center gap-2 disabled:opacity-60"
+            className="px-6 py-2.5 text-sm font-bold bg-xb-accent hover:bg-xb-accenthover text-white rounded-xl shadow-lg shadow-xb-accent/20 transition-all active:scale-95 flex items-center gap-2 disabled:opacity-60"
           >
             {loading ? (
               <>
